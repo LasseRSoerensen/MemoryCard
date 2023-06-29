@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+{/* put here array to keep track of all cards present from the card pool, so the same 
+is not displayed twice. Also keep track of score and user pick */}
   return (
     <div className="App">
       <header className="App-header">
