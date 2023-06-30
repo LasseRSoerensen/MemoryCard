@@ -1,0 +1,1 @@
+{/* should contain states of the picture, if it has been clicked, if it has been clicked before */}
