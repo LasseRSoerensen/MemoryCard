@@ -11,7 +11,8 @@ function Header() {
     is not displayed twice. Also keep track of score and user pick */}
       return (
         <div className="bg-green-100 border-2 border-red-500 ">
-            HEADER
+            CURRENT SCORE:
+            HIGH SCORE:
         </div>
       );
     }
