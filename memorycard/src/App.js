@@ -38,7 +38,7 @@ function App() {
   const [highscore, setHighscore] = useState(0);
 
   return (
-    <div className="App border-2 border-black">
+    <div className="App flex flex-col h-screen">
       <Header current={score} highest={highscore}/>
       <Main pool={pool} setPool={setPool} score={score} setScore={setScore} highscore={highscore} setHighscore={setHighscore}/>
     </div>

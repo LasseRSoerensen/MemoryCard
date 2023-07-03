@@ -43,7 +43,7 @@ const shownCards = displayedpool.map(card => <Card pool={props.pool} setPool={pr
 return (
     <motion.div 
 
-    className="border-2 border-black h-screen flex-wrap flex flex-row content-center justify-center gap-2">  
+    className=" bg-orange-50  flex-wrap flex flex-1 flex-row content-center justify-center gap-4">  
       {shownCards} 
     </motion.div>
   );
