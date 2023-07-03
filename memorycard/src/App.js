@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App border-2 border-black">
       <Header current={score} highest={highscore}/>
-      <Main pool={pool} setPool={setPool}/>
+      <Main pool={pool} setPool={setPool} score={score} setScore={setScore} setHighscore={setHighscore}/>
     </div>
   );
 }

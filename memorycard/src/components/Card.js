@@ -3,18 +3,28 @@ import { useState } from "react";
 function Card(props) { 
 
   function handleClick() {
-    if (props.status === true) {
+    if (props.picked === true) {
       alert('THIS HAS ALREADY BEEN CLICKED');
-    } else {
+      props.setHighscore(props.score);
+      props.setScore(0);
 
-      props.current[1](props.current[0] + 1);
-      for (let i = 0; i < props.cardcollection[0].length; i++) {
-        if(props.cardcollection[0][i].file === props.img) {
-          props.cardcollection[1]([i].picked = true); 
+      props.setPool(props.pool.map(item => {
+
+          return {...item, picked: false};
+      }));
+
+    } else {
+      props.setScore(props.score + 1);
+      props.setPool(props.pool.map(item => {
+        if (item.file === props.img) {
+          return {...item, picked: true};
+        } else {
+          return item;
         }
-      } 
+      }));
     }
-  }
+    console.log(props.pool);
+  } 
 
   return (
     <div className="bg-green-100 flex border-2 border-red-500 basis-100 self-start basis-40 h-40 ">

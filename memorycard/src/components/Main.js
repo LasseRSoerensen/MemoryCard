@@ -19,9 +19,9 @@ function Main(props) {
     setDisplayedpool(test);
   }
 
-  useEffect(() => {generateCards();}, []);
+  useEffect(() => {generateCards();}, [props.pool]);
 
-const shownCards = displayedpool.map(card => <Card img={card.file} status={card.picked} current={props.current}/>); 
+const shownCards = displayedpool.map(card => <Card pool={props.pool} setPool={props.setPool} img={card.file} picked={card.picked} score={props.score} setScore={props.setScore} setHighscore={props.setHighscore}/>); 
   return (
     <div className="border-2 border-black h-screen flex-wrap flex flex-row content-center justify-center gap-2">  
       {shownCards} 
