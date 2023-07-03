@@ -34,7 +34,7 @@ function Main(props) {
   useEffect(() => {generateCards();}, [props.pool]);
 
 
-const shownCards = displayedpool.map(card => <Card pool={props.pool} setPool={props.setPool} img={card.file} picked={card.picked} score={props.score} setScore={props.setScore} setHighscore={props.setHighscore}/>); 
+const shownCards = displayedpool.map(card => <Card pool={props.pool} setPool={props.setPool} img={card.file} picked={card.picked} score={props.score} setScore={props.setScore} highscore={props.highscore} setHighscore={props.setHighscore}/>); 
   
 
 

@@ -6,7 +6,10 @@ function Card(props) {
   function handleClick() {
     if (props.picked === true) {
       alert('THIS HAS ALREADY BEEN CLICKED');
-      props.setHighscore(props.score);
+      if(props.score > props.highscore) {
+        props.setHighscore(props.score);
+
+      }
       props.setScore(0);
 
       props.setPool(props.pool.map(item => {
