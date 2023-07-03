@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 function Card(props) { 
 
@@ -27,9 +28,16 @@ function Card(props) {
   } 
 
   return (
-    <div className="bg-green-100 flex border-2 border-red-500 basis-100 self-start basis-40 h-40 ">
+    <motion.div 
+    initial={{opacity: 0, translateX: 0, translateY: -500}}
+    animate={{opacity: 1, translateX: 0, translateY: 0}}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    transition={{ type: "spring", bounce: 0, stiffness: 400, damping: 40, duration: 3 }}
+    
+    className=" rounded-2xl overflow-hidden shadow-2xl flex basis-100 self-start basis-40 h-40 ">
       <button className="flex-1 flex"><img className="flex-1 bg-fixed" src={props.img} alt="my image" onClick={handleClick} /></button>
-    </div>
+    </motion.div>
   );
     }
     
