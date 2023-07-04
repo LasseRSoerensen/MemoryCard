@@ -2,10 +2,11 @@ import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import '../App.css';
 
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
+{/* Component that renders the option menu*/}
 export default function Options(props) {
   return (
     <div className="m-1 flex  justify-center">
@@ -37,8 +38,6 @@ export default function Options(props) {
 
                       return {...item, picked: false};
                     }));}
-                  
-                  
                   }
                   href="#"
                   className={classNames(
@@ -64,13 +63,10 @@ export default function Options(props) {
                 </a>
               )}
             </Menu.Item>
-     
-
-            <form method="POST" action="#">
+            
               <Menu.Item>
                 {({ active }) => (
                   <div className="pl-2 pr-2">
-
                     <input
                     onChange={(e) => {
                       props.setPool(props.cardPool.slice(0, e.target.value))
@@ -91,7 +87,7 @@ export default function Options(props) {
                   
                 )}
               </Menu.Item>
-            </form>
+            
     
           </div>
         </Menu.Items>

@@ -34,7 +34,7 @@ import deer1 from './cards/deer1.jpg';
 import racoon1 from './cards/racoon1.jpg';
 import sheep1 from './cards/sheep1.jpg';
 import hamster1 from './cards/hamster1.jpg';
-
+import DialogBox from './components/Dialog';
 
 
   {/*pool of all the pictures*/}
@@ -73,14 +73,29 @@ function App() {
   const [pool, setPool] = useState(cardPool);
   const [score, setScore] = useState(0);
   const [highscore, setHighscore] = useState(0);
-
-  return (
-    <div className="bg-orange-50 App flex flex-col h-screen">
+  const [reset, setReset] = useState(false);
+  if(reset) {
+    return (
+      <div className="bg-orange-50 App flex flex-col h-screen">
       <Header current={score} highest={highscore}/>
       <Options setScore={setScore} setHighscore={setHighscore} pool={pool} setPool={setPool} cardPool={cardPool}/>
-      <Main pool={pool} setPool={setPool} score={score} setScore={setScore} highscore={highscore} setHighscore={setHighscore}/>
+      <DialogBox setReset={setReset}/>
+  
+    </div>
+      );
+      
+  } else {
+
+
+    
+    return (
+      <div className="bg-orange-50 App flex flex-col h-screen">
+      <Header current={score} highest={highscore}/>
+      <Options setScore={setScore} setHighscore={setHighscore} pool={pool} setPool={setPool} cardPool={cardPool}/>
+      <Main setReset={setReset} pool={pool} setPool={setPool} score={score} setScore={setScore} highscore={highscore} setHighscore={setHighscore}/>
     </div>
   );
+}
 }
 
 export default App;

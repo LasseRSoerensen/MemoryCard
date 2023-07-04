@@ -1,16 +1,14 @@
-import { useState } from "react";
 import { motion } from "framer-motion"
 
-
-
+{/* compoment which renders the card*/}
 function Card(props) { 
-
+{/* if the card have been picked before it stops the game, else it keeps track of picked cards*/}
+{/* also handles score and highscore count*/}
   function handleClick() {
     if (props.picked === true) {
-      alert('THIS HAS ALREADY BEEN CLICKED');
+      props.setReset(true)
       if(props.score > props.highscore) {
         props.setHighscore(props.score);
-
       }
       props.setScore(0);
 
@@ -30,9 +28,10 @@ function Card(props) {
       }));
     }
   } 
-
+  
   return (
     <motion.div 
+    
     initial={{opacity: 0, translateX: 0, translateY: -500}}
     animate={{opacity: 1, translateX: 0, translateY: 0}}
     whileHover={{ scale: 1.1 }}

@@ -3,19 +3,9 @@ import Card from "./Card";
 import { motion } from "framer-motion"
 
 
-const item = {
-  hidden: { y: 20, opacity: 0 },
-  visible: {
-    y: 0,
-    opacity: 1
-  }
-};
+{/* Component that renders the main page which contains the cards and the dialog box*/}
 function Main(props) {
-  {/*TODO -- fix loading of pictures, placeholder shows for a couple of seconds
-  Slider og animation til antal felter 
-  animationer til resten af siden 
-  color coding 
-*/}
+
   const [displayedpool, setDisplayedpool] = useState([]); 
 
   const generateCards = () => {
@@ -34,15 +24,10 @@ function Main(props) {
   useEffect(() => {generateCards();}, [props.pool]);
 
 
-const shownCards = displayedpool.map(card => <Card pool={props.pool} setPool={props.setPool} img={card.file} picked={card.picked} score={props.score} setScore={props.setScore} highscore={props.highscore} setHighscore={props.setHighscore}/>); 
-  
-
-
-
+const shownCards = displayedpool.map(card => < Card setReset={props.setReset} pool={props.pool} setPool={props.setPool} img={card.file} picked={card.picked} score={props.score} setScore={props.setScore} highscore={props.highscore} setHighscore={props.setHighscore}/>); 
 
 return (
     <motion.div 
-
     className="   flex-wrap flex flex-1 flex-row content-center justify-center gap-4">  
       {shownCards} 
     </motion.div>

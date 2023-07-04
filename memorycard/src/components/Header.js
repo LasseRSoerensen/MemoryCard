@@ -1,7 +1,6 @@
-import { useState } from "react";
-
+{/* Component that renders the header */}
 function Header(props) {
-
+  
       return (
         <div className="bg-red-400 font-bold font-mono text-white text-xl">
             <h1 className="text-yellow-300">HIGH SCORE: {props.highest}</h1>
