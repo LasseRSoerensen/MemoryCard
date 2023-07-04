@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/MemoryCard/static/css/main.e92194b1.css",
+    "main.js": "/MemoryCard/static/js/main.2b2b021a.js",
+    "static/media/turtle1.jpg": "/MemoryCard/static/media/turtle1.269a13e4e357d8ebc80b.jpg",
+    "static/media/bird6.jpg": "/MemoryCard/static/media/bird6.afbf0ff1aa364030a0ba.jpg",
+    "static/media/pinguin1.jpg": "/MemoryCard/static/media/pinguin1.9ee8577425a32044662b.jpg",
+    "static/media/tiger1.jpg": "/MemoryCard/static/media/tiger1.0d5460c3df55b2054c04.jpg",
+    "static/media/monkey1.jpg": "/MemoryCard/static/media/monkey1.9d40a813a38f30280d88.jpg",
+    "static/media/pinguin2.jpg": "/MemoryCard/static/media/pinguin2.c5500d069ce77f41b7bd.jpg",
+    "static/media/cat3.jpg": "/MemoryCard/static/media/cat3.9b5382b26246a4da0057.jpg",
+    "static/media/cat1.jpg": "/MemoryCard/static/media/cat1.09487682bb11dbd3f66e.jpg",
+    "static/media/bird3.jpg": "/MemoryCard/static/media/bird3.1a03623dbd7956cf3f08.jpg",
+    "static/media/cat4.jpg": "/MemoryCard/static/media/cat4.c4d42b8320a5fa3f9ae8.jpg",
+    "static/media/bird4.jpg": "/MemoryCard/static/media/bird4.d889e38b8ea48bbd6148.jpg",
+    "static/media/fox1.jpg": "/MemoryCard/static/media/fox1.f0b92893be13570be6b4.jpg",
+    "static/media/ost1.jpg": "/MemoryCard/static/media/ost1.29466592e755cba4653e.jpg",
+    "static/media/dog1.jpg": "/MemoryCard/static/media/dog1.f455143822ebbbe5e26d.jpg",
+    "static/media/lion1.jpg": "/MemoryCard/static/media/lion1.115b17a6bd00270efed6.jpg",
+    "static/media/hamster1.jpg": "/MemoryCard/static/media/hamster1.d7a1b65a3fec4a2967e7.jpg",
+    "static/media/sheep1.jpg": "/MemoryCard/static/media/sheep1.106d0623506857cb21f6.jpg",
+    "static/media/leopard1.jpg": "/MemoryCard/static/media/leopard1.d0219f1f41d081bccb0f.jpg",
+    "static/media/racoon1.jpg": "/MemoryCard/static/media/racoon1.7d2527dc034e64838a53.jpg",
+    "static/media/cat2.jpg": "/MemoryCard/static/media/cat2.e0236fd234f58428aaca.jpg",
+    "static/media/bird2.jpg": "/MemoryCard/static/media/bird2.9f4b42e250417e185915.jpg",
+    "static/media/deer1.jpg": "/MemoryCard/static/media/deer1.91f1353654119782c495.jpg",
+    "static/media/horse1.jpg": "/MemoryCard/static/media/horse1.671aa76291d0d13a0f36.jpg",
+    "static/media/cow1.jpg": "/MemoryCard/static/media/cow1.4e211192787b0e6fa857.jpg",
+    "static/media/bird5.jpg": "/MemoryCard/static/media/bird5.5e5d427916aa25237788.jpg",
+    "static/media/turtle2.jpg": "/MemoryCard/static/media/turtle2.b861f270213c741e4b32.jpg",
+    "static/media/cat5.jpg": "/MemoryCard/static/media/cat5.b290974a2f57b532ccf2.jpg",
+    "static/media/butter1.jpg": "/MemoryCard/static/media/butter1.c6ea910f5c93fc5c627f.jpg",
+    "static/media/camel1.jpg": "/MemoryCard/static/media/camel1.66ccf0607ee904eae4f3.jpg",
+    "static/media/bird1.jpg": "/MemoryCard/static/media/bird1.6c85c630bdf27cf025d8.jpg",
+    "index.html": "/MemoryCard/index.html",
+    "main.e92194b1.css.map": "/MemoryCard/static/css/main.e92194b1.css.map",
+    "main.2b2b021a.js.map": "/MemoryCard/static/js/main.2b2b021a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e92194b1.css",
+    "static/js/main.2b2b021a.js"
+  ]
+}
