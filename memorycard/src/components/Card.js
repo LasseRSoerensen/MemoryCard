@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion"
 
+
+
 function Card(props) { 
 
   function handleClick() {
@@ -27,7 +29,6 @@ function Card(props) {
         }
       }));
     }
-    console.log(props.pool);
   } 
 
   return (

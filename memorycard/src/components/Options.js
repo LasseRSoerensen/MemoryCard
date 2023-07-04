@@ -72,7 +72,13 @@ export default function Options(props) {
                   <div className="pl-2 pr-2">
 
                     <input
-                    type="range" min="10" steps="3" max={props.cardPool.length} onChange={(e) => props.setPool(props.cardPool.slice(0, e.target.value))} defaultValue={Object.keys(props.pool).length} id="myRange"
+                    onChange={(e) => {
+                      props.setPool(props.cardPool.slice(0, e.target.value))
+                      props.setScore(0)
+                      props.setHighscore(0)
+
+                    }}
+                    type="range" min="10" steps="3" max={props.cardPool.length} defaultValue={Object.keys(props.pool).length} id="myRange"
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block w-full px-4 py-2 text-left text-sm',
