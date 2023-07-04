@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from "react";
 import Header from './components/Header';
 import Main from './components/Main';
-
+import Options from './components/Options';
 import bird1 from './cards/bird1.jpg';
 import bird2 from './cards/bird2.jpg';
 import bird3 from './cards/bird3.jpg';
@@ -38,8 +38,9 @@ function App() {
   const [highscore, setHighscore] = useState(0);
 
   return (
-    <div className="App flex flex-col h-screen">
+    <div className="bg-orange-50 App flex flex-col h-screen">
       <Header current={score} highest={highscore}/>
+      <Options setScore={setScore} pool={pool} setPool={setPool}/>
       <Main pool={pool} setPool={setPool} score={score} setScore={setScore} highscore={highscore} setHighscore={setHighscore}/>
     </div>
   );
