@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="bg-orange-50 App flex flex-col h-screen">
       <Header current={score} highest={highscore}/>
-      <Options setScore={setScore} pool={pool} setPool={setPool}/>
+      <Options setScore={setScore} pool={pool} setPool={setPool} cardPool={cardPool}/>
       <Main pool={pool} setPool={setPool} score={score} setScore={setScore} highscore={highscore} setHighscore={setHighscore}/>
     </div>
   );
